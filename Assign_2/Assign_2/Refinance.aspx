@@ -19,6 +19,19 @@
         .auto-style3 {
             width: 419px;
         }
+        .auto-style4 {
+            width: 514px;
+        }
+        .auto-style5 {
+            width: 545px;
+        }
+        .auto-style6 {
+            width: 367px;
+        }
+        .auto-style7 {
+            font-family: "Segoe UI";
+            color: #EC971F;
+        }
     </style>
 </head>
 <body>
@@ -28,65 +41,66 @@
   <h3>Enter Your Refinance Details Below</h3> 
 </div>
         <div>
-            <table class="w-100">
-                <tr>
-                    <td>Loan Details</td>
-                    <td>Inputs</td>
-                    <td>Output</td>
+            <table class="w-100 ">
+                <tr class="text-success">
+                    <td class="auto-style4">Loan Details</td>
+                    <td class="auto-style6">Inputs</td>
+                    <td class="auto-style5">Output</td>
                     <td>Results</td>
                 </tr>
                 <tr>
-                    <td>Loan Amount:</td>
-                    <td>
-                        <asp:TextBox ID="txtLoanAmount" runat="server"></asp:TextBox>
+                    <td class="auto-style4">Loan Amount:</td>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="txtLoanAmount" runat="server" type="number" BackColor="#CCCCFF"></asp:TextBox>
                     </td>
-                    <td>Monthly Payment:</td>
+                    <td class="auto-style5">Monthly Payment:</td>
                     <td>
-                        <asp:Label ID="lblMonthlyPayment" runat="server" Text="Label"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Interest Rate:</td>
-                    <td>
-                        <asp:TextBox ID="txtInterestRate" runat="server">%</asp:TextBox>
-                    </td>
-                    <td>Total Loan Payments:</td>
-                    <td>
-                        <asp:Label ID="lblTotalPayments" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblMonthlyPayment" runat="server" Text="payment" CssClass="auto-style7"></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td>Loan Term (Years):</td>
+                    <td class="auto-style4">Interest Rate: (ex. enter 3.25% as 3.25)</td>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="txtInterestRate" runat="server" type="number" step="0.001"></asp:TextBox>
+                    </td>
+                    <td class="auto-style5">Total Loan Payments:</td>
                     <td>
-                        <asp:ListBox ID="lstTerm" runat="server" Height="24px" Width="156px">
+                        <asp:Label ID="lblTotalPayments" runat="server" Text="number of payments" CssClass="auto-style7"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">Loan Term (Years):</td>
+                    <td id="lstTerm" class="auto-style6">
+                        <asp:DropDownList ID="lstTerm" runat="server">
                             <asp:ListItem>5</asp:ListItem>
                             <asp:ListItem>10</asp:ListItem>
                             <asp:ListItem>15</asp:ListItem>
-                            <asp:ListItem>20</asp:ListItem>
                             <asp:ListItem>30</asp:ListItem>
-                        </asp:ListBox>
+                        </asp:DropDownList>
                     </td>
-                    <td>Total $ Value of all Payments:</td>
+                    <td class="auto-style5">Total $ Value of all Payments:</td>
                     <td>
-                        <asp:Label ID="lblTotalValuePayments" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblTotalValuePayments" runat="server" Text="$$" CssClass="auto-style7"></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style4">
+                        <asp:Button ID="btnReset" type="reset" runat="server" Text="Reset" />
+                    </td>
+                    <td class="auto-style6">
                         <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
                     </td>
-                    <td>Total $ Value of Interest Paid:</td>
+                    <td class="auto-style5">Total $ Value of Interest Paid:</td>
                     <td>
-                        <asp:Label ID="lblTotalInterestPaid" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblTotalInterestPaid" runat="server" Text="$$" CssClass="auto-style7"></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>Total $ Value of Principal Repaid:</td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style6">&nbsp;</td>
+                    <td class="auto-style5">Total $ Value of Principal Repaid:</td>
                     <td>
-                        <asp:Label ID="lblTotalPrincipal" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblTotalPrincipal" runat="server" Text="$$" CssClass="auto-style7"></asp:Label>
                     </td>
                 </tr>
             </table>
