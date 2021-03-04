@@ -9,9 +9,8 @@ namespace Assign_2
 {
     public partial class MortgageCalc : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        
 
-        }
+      
     }
 }
