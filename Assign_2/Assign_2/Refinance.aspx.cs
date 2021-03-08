@@ -15,7 +15,7 @@ namespace Assign_2
         double interestRate = 0;
         int term = 0;
         double payment = 0;
-
+        
         
         protected void btnSubmit_Click(object sender, EventArgs e)
         {   

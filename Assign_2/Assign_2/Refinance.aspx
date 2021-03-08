@@ -258,7 +258,7 @@
                 <td class="auto-style18">&nbsp;</td>
                 <td class="auto-style2">Total $ Value of All Payments:</td>
                 <td class="auto-style17">
-                    <asp:Label ID="lblTotValPmts" runat="server" Text="Total Value of Pmts" CssClass="auto-style7"></asp:Label>
+                    <asp:Label ID="lblTotValPmts" runat="server" Text="Total Value of Payments" CssClass="auto-style7"></asp:Label>
                 </td>
                 <td>
                     &nbsp;</td>

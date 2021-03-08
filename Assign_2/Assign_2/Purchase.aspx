@@ -45,32 +45,41 @@
         <div>
             <table class="w-100">
                 <tr>
+                    <td>&nbsp;</td>
                     <td>Loan Details</td>
                     <td>Inputs</td>
                     <td>Output</td>
                     <td>Results</td>
+                    <td>&nbsp;</td>
                 </tr>
                 <tr>
+                    <td>&nbsp;</td>
                     <td>Purchase Price:</td>
                     <td>
-                        <asp:TextBox ID="txtPurchasePrice" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtPurchasePrice" runat="server" BackColor="#CCCCFF"></asp:TextBox>
                     </td>
                     <td>Monthly Payment:</td>
                     <td>
                         <asp:Label ID="lblMonthlyPayment" runat="server" Text="Label"></asp:Label>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
+                    <td class="auto-style1">&nbsp;</td>
                     <td class="auto-style1">Down Payment:</td>
                     <td class="auto-style1">
-                        <asp:TextBox ID="txtDownPayment" runat="server" OnTextChanged="txtDownPayment_TextChanged"></asp:TextBox>
+                        <asp:TextBox ID="txtDownPayment" runat="server" OnTextChanged="txtDownPayment_TextChanged" BackColor="#CCCCFF"></asp:TextBox>
                     </td>
                     <td class="auto-style1">Total Loan Payments:</td>
                     <td class="auto-style1">
                         <asp:Label ID="lblTotalPayments" runat="server" Text="Label"></asp:Label>
                     </td>
+                    <td class="auto-style1">
+                        &nbsp;</td>
                 </tr>
                 <tr>
+                    <td>&nbsp;</td>
                     <td>Loan Amount:</td>
                     <td>
                         <asp:Label ID="lblLoanAmount" runat="server" Text="Loan Amount"></asp:Label>
@@ -79,21 +88,27 @@
                     <td>
                         <asp:Label ID="lblTotalValuePayments" runat="server" Text="Label"></asp:Label>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
+                    <td>&nbsp;</td>
                     <td>Interest Rate:</td>
                     <td>
-                        <asp:TextBox ID="txtInterestRate" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtInterestRate" runat="server" BackColor="#CCCCFF"></asp:TextBox>
                     </td>
                     <td>Total $ Value of Interest Paid:</td>
                     <td>
                         <asp:Label ID="lblTotalInterestPaid" runat="server" Text="Label"></asp:Label>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
+                    <td>&nbsp;</td>
                     <td>Loan Term (Years):</td>
                     <td>
-                        <asp:ListBox ID="lstTerm" runat="server" Height="24px" Width="156px">
+                        <asp:ListBox ID="lstTerm" runat="server" Height="24px" Width="156px" BackColor="#CCCCFF">
                             <asp:ListItem>5</asp:ListItem>
                             <asp:ListItem>10</asp:ListItem>
                             <asp:ListItem>15</asp:ListItem>
@@ -105,18 +120,132 @@
                     <td>
                         <asp:Label ID="lblTotalPrincipal" runat="server" Text="Label"></asp:Label>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
+                    <td>&nbsp;</td>
                     <td>
-                        <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
+                        <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" BackColor="#CCCCFF" />
                     </td>
                     <td>&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        &nbsp;</td>
                     <td>
                         &nbsp;</td>
                 </tr>
             </table>
         </div>
+        <br />
+
+
+          <div class="container">
+        <div class="text-center text-info">
+            <h3 class="auto-style13">Paying even a little extra each month can make a big difference in interest paid over the life of a mortgage.</h3>
+            <p class="auto-style13">The calculator below shows the impact of making a slightly larger payment everymonth on your mortage. </p>
+            <p>    Enter a higher payment amount below to see the impact. (Try rounding your payment up to the next $100) </p>
+        </div>
+        <table class="w-100">
+            <tr>
+                <td class="auto-style9"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style11"></td>
+                <td class="auto-style16"></td>
+                <td class="auto-style12">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Anticipated Monthly Payment:</td>
+                <td class="auto-style18">
+                    $&nbsp;&nbsp; <asp:TextBox ID="txtAnticipatedPayment" runat="server" BackColor="#CCCCFF" Width="110px"></asp:TextBox>
+                </td>
+                <td class="auto-style2">Total Loan Payments:</td>
+                <td class="auto-style17">
+                    <asp:Label ID="lblTotalNumPmts" runat="server" Text="Total Payments" CssClass="auto-style7"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style18">&nbsp;</td>
+                <td class="auto-style2">Total $ Value of All Payments:</td>
+                <td class="auto-style17">
+                    <asp:Label ID="lblTotValPmts" runat="server" Text="Total Value of Payments" CssClass="auto-style7"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Excess Payment:</td>
+                <td class="auto-style18">
+                    <asp:Label ID="lblExcessPmt" runat="server" Text="excess payment"></asp:Label>
+                </td>
+                <td class="auto-style2">Total$ Value of Interest Paid:</td>
+                <td class="auto-style17">
+                    <asp:Label ID="lblTotIntPd" runat="server" Text="total Interest Paid" CssClass="auto-style7"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style18">&nbsp;</td>
+                <td class="auto-style2">Total $ Value of Principal Paid:</td>
+                <td class="auto-style17">
+                    <asp:Label ID="lblTotPrinPd" runat="server" Text="Total Principal" CssClass="auto-style7"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style18">
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnSubmitPmtCalc" runat="server" Height="36px" OnClick="btnSubmitPmtCalc_Click" Text="Calculate" BackColor="#CCCCFF" />
+                </td>
+                <td class="auto-style2">Savings in Dollars:</td>
+                <td class="auto-style17">
+                    <strong>
+                    <asp:Label ID="lblTotSavings" runat="server" Text="savings" CssClass="auto-style15"></asp:Label>
+                    </strong>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style18">&nbsp;</td>
+                <td class="auto-style2">Savings in Years:</td>
+                <td class="auto-style17">
+                    <asp:Label ID="lblTimeSave" runat="server" Text="years saved" CssClass="auto-style15"></asp:Label>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style18">&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style17">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        </div>
+
     </form>
 </body>
 </html>
