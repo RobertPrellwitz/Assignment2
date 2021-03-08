@@ -17,23 +17,25 @@
 <div class="jumbotron text-center text-info">
   <h1>The Mortgage Calculator</h1>
   <h3>Select Purchase or Refinance Below</h3> 
-</div>
+
 
 <div class="container-fluid text-success">
   <div class="row">
+      <h4>Navigation Links</h4>
     <div class="col-sm-4">
-      <h3>Purchase Loan Calculator</h3>
+      <h3></h3>
         <p>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Purchase.aspx">Purchase Loan Calculator</asp:HyperLink>
         </p>
     </div>
     <div class="col-sm-4">
-      <h3>Refinance Loan Calculator</h3>
+      <h3></h3>
         <p>
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Refinance.aspx">Refinance Loan Calculator</asp:HyperLink>
         </p>
     </div>
   </div>
+</div>
 </div>
 
 

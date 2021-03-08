@@ -17,10 +17,31 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="jumbotron text-center text-info">
+<div class="jumbotron text-center text-info">
   <h1>The Mortgage Calculator</h1>
   <h3>Enter Your Purchase Details Below</h3> 
+    <div class="container-fluid text-success">
+  <div class="row">
+      <h3> Navigation Links </h3>
+    <div class="col-sm-4">
+      <h3></h3>
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Refinance.aspx">Refinance Loan Calculator</asp:HyperLink>
+        </p>
+    </div>
+    <div class="col-sm-4">
+     
+        <p>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/MortgageCalc.aspx">Mortgage Calculator Home</asp:HyperLink>
+        </p>
+    </div>
+  </div>
 </div>
+
+</div>
+
+
+
         <div>
             <table class="w-100">
                 <tr>

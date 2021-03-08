@@ -10,6 +10,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <style type="text/css">
+        table, {
+            padding:40px;
+        }
         .auto-style1 {
             width: 709px;
         }
@@ -36,11 +39,33 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="jumbotron text-center text-info">
+<div class="jumbotron text-center text-info">
   <h1>The Mortgage Calculator</h1>
   <h3>Enter Your Refinance Details Below</h3> 
+
+ <div class="container-fluid text-success">
+  <div class="row">
+      <h4>Navigation Links</h4>
+    <div class="col-sm-4">
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Purchase.aspx">Purchase Loan Calculator</asp:HyperLink>
+        </p>
+    </div>
+    <div class="col-sm-4">
+      <h3></h3>
+        <p>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/MortgageCalc.aspx"> Mortgage Calculator Home</asp:HyperLink>
+        </p>
+    </div>
+  </div>
 </div>
-        <div>
+
+</div>
+
+
+
+
+        <div class="container-fluid">
             <table class="w-100 ">
                 <tr class="text-success">
                     <td class="auto-style4">Loan Details</td>
@@ -106,6 +131,7 @@
             </table>
         </div>
         <br />
+    <div class="container">
         <div class="text-center text-info">
             <h3>Paying even a little extra each month can make a big difference in interest paid over the life of a mortgage.</h3>
 
@@ -173,6 +199,7 @@
                 </td>
             </tr>
         </table>
+        </div>
     </form>
 </body>
 </html>
