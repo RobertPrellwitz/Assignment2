@@ -23,13 +23,11 @@
   <div class="row">
       <h4>Navigation Links</h4>
     <div class="col-sm-4">
-      <h3></h3>
-        <p>
+              <p>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Purchase.aspx">Purchase Loan Calculator</asp:HyperLink>
         </p>
     </div>
     <div class="col-sm-4">
-      <h3></h3>
         <p>
             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Refinance.aspx">Refinance Loan Calculator</asp:HyperLink>
         </p>

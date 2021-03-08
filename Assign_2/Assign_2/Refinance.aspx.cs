@@ -16,11 +16,7 @@ namespace Assign_2
         int term = 0;
         double payment = 0;
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         protected void btnSubmit_Click(object sender, EventArgs e)
         {   
             loanValue = Convert.ToDouble(txtLoanAmount.Text);
@@ -85,5 +81,28 @@ namespace Assign_2
             
 
         }
+
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            txtLoanAmount.Text = default;
+            txtInterestRate.Text = default;
+            lblMonthlyPayment.Text = default;
+            lblTotalPayments.Text = default;
+            lblTotalValuePayments.Text = default;
+            lblTotalInterestPaid.Text = default;
+            lblTotalPrincipal.Text = default;
+            lblTotalNumPmts.Text = default;
+            lblTotalValuePayments.Text = default;
+            lblTotIntPd.Text = default;
+            lblTotPrinPd.Text = default;
+            lblTotSavings.Text = default;
+            lblTimeSave.Text = default;
+        }
+
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    txtLoanAmount.Text = string.Empty;
+        //    txtInterestRate.Text = string.Empty;
+        //}
     }
 }
