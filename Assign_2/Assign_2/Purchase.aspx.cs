@@ -96,5 +96,25 @@ namespace Assign_2
 
         }
 
+        protected void btnClearForm_Click(object sender, EventArgs e)
+        {
+            txtPurchasePrice.Text = default;
+            txtDownPayment.Text = default;
+            lblLoanAmount.Text = default;
+            txtAnticipatedPayment.Text = default;
+            lblExcessPmt.Text = default;
+            txtInterestRate.Text = default;
+            lblMonthlyPayment.Text = default;
+            lblTotalPayments.Text = default;
+            lblTotalValuePayments.Text = default;
+            lblTotalInterestPaid.Text = default;
+            lblTotalPrincipal.Text = default;
+            lblTotalNumPmts.Text = default;
+            lblTotValPmts.Text = default;
+            lblTotIntPd.Text = default;
+            lblTotPrinPd.Text = default;
+            lblTotSavings.Text = default;
+            lblTimeSave.Text = default;
+        }
     }
 }

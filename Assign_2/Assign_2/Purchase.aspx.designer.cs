@@ -120,7 +120,7 @@ namespace Assign_2
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lstTerm;
+        protected global::System.Web.UI.WebControls.DropDownList lstTerm;
 
         /// <summary>
         /// lblTotalPrincipal control.
@@ -139,6 +139,15 @@ namespace Assign_2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+
+        /// <summary>
+        /// btnClearForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnClearForm;
 
         /// <summary>
         /// txtAnticipatedPayment control.

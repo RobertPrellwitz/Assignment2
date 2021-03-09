@@ -86,7 +86,9 @@ namespace Assign_2
         {
             txtLoanAmount.Text = default;
             txtInterestRate.Text = default;
+            txtAnticipatedPayment.Text = default;
             lblMonthlyPayment.Text = default;
+            lblTotValPmts.Text = default;
             lblTotalPayments.Text = default;
             lblTotalValuePayments.Text = default;
             lblTotalInterestPaid.Text = default;
@@ -97,6 +99,7 @@ namespace Assign_2
             lblTotPrinPd.Text = default;
             lblTotSavings.Text = default;
             lblTimeSave.Text = default;
+            lblExcessPmt.Text = default;
         }
 
         //protected void Page_Load(object sender, EventArgs e)
