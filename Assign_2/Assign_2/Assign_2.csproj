@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="images\house.jpg" />
+    <Content Include="images\money.png" />
     <Content Include="MortgageCalc.aspx" />
     <Content Include="Purchase.aspx" />
     <Content Include="Refinance.aspx" />

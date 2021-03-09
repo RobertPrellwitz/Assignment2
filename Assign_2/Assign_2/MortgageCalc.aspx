@@ -9,14 +9,32 @@
   <link rel="stylesheet" href="StyleSheet1.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            padding-right: 25px;
+            width: 100px;
+            height: 100px;
+        }
+        .auto-style2 {
+            padding-left: 25px;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
     </head>
 <body>
 
     <form id="form1" runat="server">
+        <div>
+
+            </div>
 
 <div class="jumbotron text-center text-info">
-  <h1>The Mortgage Calculator</h1>
-  <h3>Select Purchase or Refinance Below</h3> 
+  <h1>
+      The Mortgage Calculator</h1>
+  <h3>
+
+            <img alt="" class="auto-style1" src="images/money.png" />&nbsp; Select Purchase or Refinance Below<img alt="" class="auto-style2" src="images/house.jpg" /></h3> 
 
      <asp:Label ID="lblDate" runat="server"  Height="24px" ></asp:Label>
      <asp:Label ID="lblTime" runat="server" Height="24px" ></asp:Label>
