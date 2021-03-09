@@ -36,7 +36,7 @@
         }
         .auto-style7 {
             font-family: "Segoe UI";
-            color: #D1EDF6;
+            color: #ED9D2B;
         }
         .auto-style8 {
             font-family: "Segoe UI";
@@ -153,6 +153,13 @@
         .auto-style35 {
             height: 50px;
             width: 220px;
+        }
+        .auto-style36 {
+            font-family: "Segoe UI";
+        }
+        .auto-style37 {
+            font-family: "Segoe UI";
+            height: 38px;
         }
     </style>
 </head>
@@ -324,11 +331,11 @@
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">Anticipated Monthly Payment:</td>
+                <td class="auto-style36">Anticipated Monthly Payment:</td>
                 <td class="auto-style18">
                     $&nbsp;&nbsp; <asp:TextBox ID="txtAnticipatedPayment" runat="server" BackColor="#CCCCFF" Width="110px"></asp:TextBox>
                 </td>
-                <td class="auto-style2">Total Loan Payments:</td>
+                <td class="auto-style36">Total Loan Payments:</td>
                 <td class="auto-style17">
                     <asp:Label ID="lblTotalNumPmts" runat="server" Text="Total Payments" CssClass="auto-style3"></asp:Label>
                 </td>
@@ -337,12 +344,12 @@
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style18">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="btnSubmitPmtCalc" runat="server" Height="36px" OnClick="btnSubmitPmtCalc_Click" Text="Calculate" BackColor="#CCCCFF" />
                 </td>
-                <td class="auto-style2">Total $ Value of All Payments:</td>
+                <td class="auto-style36">Total $ Value of All Payments:</td>
                 <td class="auto-style17">
                     <asp:Label ID="lblTotValPmts" runat="server" Text="Total Value of Payments" CssClass="auto-style3"></asp:Label>
                 </td>
@@ -354,7 +361,7 @@
                 <td class="auto-style6"></td>
                 <td class="auto-style4">
                     &nbsp;</td>
-                <td class="auto-style5">Total$ Value of Interest Paid:</td>
+                <td class="auto-style37">Total$ Value of Interest Paid:</td>
                 <td class="auto-style4">
                     <asp:Label ID="lblTotIntPd" runat="server" Text="total Interest Paid" CssClass="auto-style3"></asp:Label>
                 </td>
@@ -363,11 +370,11 @@
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">Excess Payment:</td>
+                <td class="auto-style36">Excess Payment:</td>
                 <td class="auto-style18">
                     <asp:Label ID="lblExcessPmt" runat="server" Text="excess payment" CssClass="auto-style7"></asp:Label>
                 </td>
-                <td class="auto-style2">Total $ Value of Principal Paid:</td>
+                <td class="auto-style36">Total $ Value of Principal Paid:</td>
                 <td class="auto-style17">
                     <asp:Label ID="lblTotPrinPd" runat="server" Text="Total Principal" CssClass="auto-style3"></asp:Label>
                 </td>
@@ -376,11 +383,11 @@
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style36">&nbsp;</td>
                 <td class="auto-style18">
                     &nbsp;&nbsp;&nbsp;
                     </td>
-                <td class="auto-style2">Savings in Dollars:</td>
+                <td class="auto-style36">Savings in Dollars:</td>
                 <td class="auto-style17">
                     <strong>
                     <asp:Label ID="lblTotSavings" runat="server" Text="savings" CssClass="auto-style15" style="font-family: 'Segoe UI'; color: #5CB85C"></asp:Label>
@@ -393,7 +400,7 @@
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>
                 <td class="auto-style18">&nbsp;</td>
-                <td class="auto-style2">Savings in Years:</td>
+                <td class="auto-style36">Savings in Years:</td>
                 <td class="auto-style17">
                     <asp:Label ID="lblTimeSave" runat="server" Text="years saved" CssClass="auto-style15" style="font-family: 'Segoe UI'; font-weight: bold; color: #5CB85C"></asp:Label>
                 </td>
