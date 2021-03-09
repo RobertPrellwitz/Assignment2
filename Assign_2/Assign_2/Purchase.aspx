@@ -169,6 +169,12 @@
   <h1>The Mortgage Calculator</h1>
   <h3>Enter Your Purchase Details Below</h3> 
     <div class="container-fluid text-success">
+
+        <asp:Label ID="lblDate" runat="server"  Height="24px" ></asp:Label>
+     <asp:Label ID="lblTime" runat="server" Height="24px" ></asp:Label>
+
+    <br />
+    <br />
   <div class="row">
       <h3> Navigation Links </h3>
     <div class="col-sm-4">

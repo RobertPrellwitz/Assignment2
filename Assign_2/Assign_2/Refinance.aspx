@@ -117,6 +117,12 @@
   <h1>The Mortgage Calculator</h1>
   <h3>Enter Your Refinance Details Below</h3> 
 
+    <asp:Label ID="lblDate" runat="server"  Height="24px" ></asp:Label>
+     <asp:Label ID="lblTime" runat="server" Height="24px" ></asp:Label>
+
+    <br />
+    <br />
+
  <div class="container-fluid text-success">
   <div class="row">
       <h4>Navigation Links</h4>

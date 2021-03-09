@@ -14,7 +14,9 @@ namespace Assign_2
         double payment;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DateTime todaysDate = DateTime.Now;
+            lblDate.Text = todaysDate.ToString("D");
+            lblTime.Text = todaysDate.ToString("T");
         }
 
         protected void txtDownPayment_TextChanged(object sender, EventArgs e)

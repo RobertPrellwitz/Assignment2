@@ -15,8 +15,15 @@ namespace Assign_2
         double interestRate = 0;
         int term = 0;
         double payment = 0;
-        
-        
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DateTime todaysDate = DateTime.Now;
+            lblDate.Text = todaysDate.ToString("D");
+            lblTime.Text = todaysDate.ToString("T");
+        }
+
+
         protected void btnSubmit_Click(object sender, EventArgs e)
         {   
             loanValue = Convert.ToDouble(txtLoanAmount.Text);
